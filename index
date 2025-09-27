@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jess Abe — Resume</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="description" content="Resume of Jess Abe — objective, education, skills, projects." />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="profile">
+        <img src="images/headshot.jpg" alt="Portrait of Jess Abe" width="150" height="150" />
+        <div>
+          <h1>Jess Abe</h1>
+          <p class="contact">
+            <a href="mailto:yourname@ucf.edu">yourname@ucf.edu</a> •
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <ul class="main-nav">
+          <li><a href="index.html">Resume</a></li>
+          <li><a href="project-algorithm.html">Project — Algorithm</a></li>
+          <li><a href="project-portfolio.html">Project — Portfolio</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main">
+    <section aria-labelledby="objective">
+      <h2 id="objective">Professional Objective</h2>
+      <p>Concise professional objective about what you want to achieve (1–2 sentences).</p>
+    </section>
+
+    <section aria-labelledby="education">
+      <h2 id="education">Education</h2>
+      <ul>
+        <li><strong>Associate of Science — Emerging Media</strong>, College, Expected 2026</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="experience">
+      <h2 id="experience">Relevant Work Experience</h2>
+      <article>
+        <h3>Computer Lab Volunteer — Example College</h3>
+        <p class="muted">Jan 2024 — Present</p>
+        <p>Assist students with Microsoft Office, resume building, and software troubleshooting.</p>
+      </article>
+    </section>
+
+    <section aria-labelledby="projects">
+      <h2 id="projects">Selected Projects</h2>
+      <ul class="project-list">
+        <li><a href="project-algorithm.html">Algorithm Simulator — MySPIM</a></li>
+        <li><a href="project-portfolio.html">Personal Portfolio Site</a></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="skills">
+      <h2 id="skills">Skills</h2>
+      <ul class="skills">
+        <li>HTML5 / Semantic HTML</li>
+        <li>CSS3 / Responsive Design</li>
+        <li>Git / GitHub / GitHub Pages</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="awards">
+      <h2 id="awards">Awards & Honors</h2>
+      <ul>
+        <li>Dean's List — Fall 2024</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Jess Abe — <a href="mailto:yourname@ucf.edu">yourname@ucf.edu</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
