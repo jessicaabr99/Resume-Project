@@ -61,7 +61,7 @@ a:focus, button:focus { outline:3px solid #ffbf47; outline-offset:2px; }
 
 /* Work Experience formatting */
 .job-meta {
-  margin-top: -0.25rem; /* pulls it closer to the job title */
+  margin-top: -0.50rem; /* pulls it closer to the job title */
   font-style: italic;   /* optional: makes it look like metadata */
   color: var(--muted);  /* softer color so it doesn’t overpower */
   font-size: 0.95em;    /* slightly smaller than body text */
