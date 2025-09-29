@@ -78,7 +78,7 @@ a:focus, button:focus { outline:3px solid #ffbf47; outline-offset:2px; }
 
 /* Work Experience formatting */
 .job-meta {
-  margin-top: 0;          /* remove gap above */
+  margin-top: -0.50;          /* remove gap above */
   margin-bottom: 0.75rem; /* small gap before bullets */
   font-style: italic;
   color: var(--muted);
