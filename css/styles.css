@@ -1,8 +1,8 @@
 :root{
   --max-width: 1000px;
-  --accent: #4e334e;
+  --accent: #4e334e; /* purple underline color */
   --bg: #ffffff;
-  --muted: #666;
+  --muted: #666;     /* softer gray for nav links */
   --gap: 1rem;
   --radius: 12px;
   --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
@@ -15,7 +15,7 @@ body{
   margin:0;
   font-family: Constantia, serif;
   line-height:1.45;
-  color:#222;
+  color:#000; /* all text is now black */
   background:var(--bg);
   padding:0;
 }
@@ -39,26 +39,38 @@ body{
 .header-inner{display:flex;align-items:center;justify-content:space-between;gap:var(--gap)}
 .profile{display:flex;gap:.75rem;align-items:center}
 .profile img{border-radius:50%;width:100px;height:100px;object-fit:cover}
-.main-nav{list-style:none;margin:0;padding:0;display:flex;gap:.5rem}
-.main-nav a{display:inline-block;padding:.25rem .5rem;text-decoration:none}
+
+.main-nav{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  gap:.5rem;
+}
+.main-nav a{
+  display:inline-block;
+  padding:.25rem .5rem;
+  text-decoration:none;
+  color: var(--muted); /* nav links are gray */
+}
 
 /* Main sections */
 main h2 {
   position: relative;
-  margin-top: 2rem;         /* space above section */
-  margin-bottom: 1.5rem;    /* space below section */
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
   font-size: 1.5rem;
   font-weight: bold;
-  padding-bottom: 0.5rem;   /* room for underline */
+  padding-bottom: 0.5rem;
 }
 main h2::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;               /* underline sits right under text */
-  width: 100%;             /* stretch across container */
+  bottom: 0;
+  width: 100%;
   height: 2px;
-  background-color: var(--accent);
+  background-color: var(--accent); /* purple underline */
 }
 
 .project-list, .skills{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.5rem}
@@ -78,17 +90,17 @@ a:focus, button:focus { outline:3px solid #ffbf47; outline-offset:2px; }
 
 /* Work Experience formatting */
 h3 {
-  margin-bottom: 0.1rem; /* smaller space below job title */
+  margin-bottom: 0.1rem;
 }
 
 .job-meta {
-  margin-top: 0;          /* remove extra space above */
-  margin-bottom: 0.75rem; /* small gap before bullet list */
+  margin-top: 0;
+  margin-bottom: 0.75rem;
   font-style: italic;
   color: var(--muted);
   font-size: 0.95em;
 }
 
 article {
-  margin-bottom: 2rem;    /* space between each job/education entry */
+  margin-bottom: 2rem;
 }
