@@ -13,7 +13,7 @@
 html,body{height:100%}
 body{
   margin:0;
-  font-family:var(--font-sans);
+  font-family: Constantia, serif;
   line-height:1.45;
   color:#222;
   background:var(--bg);
