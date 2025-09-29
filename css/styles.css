@@ -77,10 +77,18 @@ a:focus, button:focus { outline:3px solid #ffbf47; outline-offset:2px; }
 }
 
 /* Work Experience formatting */
+h3 {
+  margin-bottom: 0.1rem; /* smaller space below job title */
+}
+
 .job-meta {
-  margin-top: -0.50;          /* remove gap above */
-  margin-bottom: 0.75rem; /* small gap before bullets */
+  margin-top: 0;          /* remove extra space above */
+  margin-bottom: 0.75rem; /* small gap before bullet list */
   font-style: italic;
   color: var(--muted);
   font-size: 0.95em;
+}
+
+article {
+  margin-bottom: 2rem;    /* space between each job/education entry */
 }
