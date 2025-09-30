@@ -148,7 +148,7 @@ article {
 
 /* Rectangular images*/
 .screenshot-gallery-rect img {
-  width: 420px;       
+  width: 450px;       
   height: 300px;      
   object-fit: cover;  
   border: 2px solid var(--accent);  
