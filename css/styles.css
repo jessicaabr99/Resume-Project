@@ -104,3 +104,32 @@ h3 {
 article {
   margin-bottom: 2rem;
 }
+
+/* Screenshot gallery */
+.screenshot-gallery {
+  display: flex;        /* place images side by side */
+  gap: 1rem;            /* small space between images */
+  margin-top: 1rem;
+  flex-wrap: wrap;      /* allows wrapping on smaller screens */
+}
+
+.screenshot-gallery img {
+  width: 250px;         /* fixed square size */
+  height: 250px;
+  object-fit: cover;    /* centers content inside square */
+  border: 2px solid #4e334e;  /* purple border to match theme */
+  border-radius: 8px;
+  background: #eee;     /* gray placeholder if no image yet */
+}
+
+/* Skills learned list */
+.skills-learned {
+  list-style: disc inside;
+  margin-top: 1rem;
+  padding-left: 0;
+}
+
+.skills-learned li {
+  margin-bottom: 0.5rem;
+}
+
