@@ -133,3 +133,38 @@ article {
   margin-bottom: 0.5rem;
 }
 
+
+/* Rectangular screenshot gallery (landscape images) */
+.screenshot-gallery-rect {
+  display: flex;
+  gap: 1rem;          /* space between images */
+  margin-top: 1rem;
+  flex-wrap: wrap;    /* wraps on small screens */
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Rectangular images: responsive, maintain aspect ratio */
+.screenshot-gallery-rect img {
+  width: 420px;       /* preferred rectangular width */
+  height: 260px;      /* preferred rectangular height */
+  object-fit: cover;  /* crop/center to fill box */
+  border: 2px solid var(--accent);  /* purple border to match theme */
+  border-radius: 8px;
+  background: #eee;   /* placeholder background if image missing */
+}
+
+/* Make the rectangular gallery responsive on smaller screens */
+@media (max-width: 900px) {
+  .screenshot-gallery-rect img {
+    width: calc(50% - 0.5rem);  /* two across with gap */
+    height: auto;               /* keep aspect ratio */
+  }
+}
+
+@media (max-width: 520px) {
+  .screenshot-gallery-rect img {
+    width: 100%;    /* stack full-width on tiny screens */
+    height: auto;
+  }
+}
