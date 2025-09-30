@@ -35,7 +35,7 @@ body{
 .skip-link:focus{left:1rem; top:1rem; z-index:1000;}
 
 /* Header */
-.site-header{border-bottom:1px solid #eee;padding:.75rem 0;background-color: #EFE7DB;}
+.site-header{border-bottom:1px solid #eee;padding:.75rem 0;background-color: #F5F2E9;}
 .header-inner{display:flex;align-items:center;justify-content:space-between;gap:var(--gap)}
 .profile{display:flex;gap:.75rem;align-items:center}
 .profile img{border-radius:50%;width:100px;height:100px;object-fit:cover}
