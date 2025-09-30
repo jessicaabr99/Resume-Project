@@ -114,8 +114,8 @@ article {
 }
 
 .screenshot-gallery img {
-  width: 250px;         /* fixed square size */
-  height: 250px;
+  width: 450px;         /* fixed square size */
+  height: 450px;
   object-fit: cover;    /* centers content inside square */
   border: 2px solid #4e334e;  /* purple border to match theme */
   border-radius: 8px;
