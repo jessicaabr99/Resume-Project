@@ -148,8 +148,8 @@ article {
 
 /* Rectangular images*/
 .screenshot-gallery-rect img {
-  width: 450px;       
-  height: 300px;      
+  width: 500px;       
+  height: auto;      
   object-fit: cover;  
   border: 2px solid var(--accent);  
   border-radius: 8px;
